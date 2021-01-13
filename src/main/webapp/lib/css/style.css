@@ -1,0 +1,546 @@
+
+
+body {
+    background-color: white;
+}
+.jumbo-front {
+  background-color: #85d939;  Orange 
+  color: #ffffff;
+  padding: 100px 25px;
+  
+  border-radius: 0px;
+  background: 
+	radial-gradient(
+	  rgba(50, 100, 50, 0.7),
+	  rgba(100, 150, 100, 0.7),
+	  rgba(150, 200, 150, 0.7)
+	),
+	
+	/* url(https://source.unsplash.com/1600x1050/?agriculture); */
+	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/* color:white !important; */
+}
+
+
+.jumbo-inner{
+  /*background-color: #85d939;  Orange */
+  color: #ffffff;
+  margin-top: -25px;
+  padding: 2px 25px;
+  
+  border-radius: 0px;
+  background: 
+	linear-gradient(
+	  rgba(150, 250, 150, 0.7),
+	  rgba(100, 200, 100, 0.7),
+	  rgba(50, 150, 50, 0.7)
+	)
+}
+
+.my-container{
+	padding:20px;
+}
+
+#site-button {
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 20px;
+	border-width: 2px;
+}
+#site-button:hover {
+	color: black;
+  background-color: rgba(0,0,0,0.1);
+}
+.bg-grey {
+  background-color: #f6f6f6;
+}
+.container-fluid {
+  padding: 60px 50px;
+}
+.center {
+  text-align: center;
+  padding-top: 50px;
+}
+.border {
+  border: 12px solid green;
+}
+.spacer{
+	padding: 50px;
+}
+
+
+/* ------------------------------------------------------- */
+/* Carousel design */
+
+.carousel-indicators li.active {
+  background-color: #f4511e;
+}
+.carousel-indicators li {
+  background-color: black;
+}
+
+/* ------------------------------------------------------- */
+
+
+/* ------------------------------------------------------- */
+/* Profile picture upload design */
+/*
+input[type="file"] {
+    position: fixed;
+    right: 100%;
+    bottom: 100%;
+}*/
+#profilePicture {
+    position: fixed;
+    right: 100%;
+    bottom: 100%;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+/* ------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------- */
+/* Navbar design */
+.navbar-trans{
+	background: transparent;
+}
+.navbar-nav li:hover > ul.dropdown-menu {
+   display: block;
+}
+.dropdown-submenu {
+	position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+	top: 0;
+	left: 100%;
+	margin-top:-6px;
+}
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+	text-decoration: underline;
+	transform: rotate(-90deg);
+} 
+
+/* make some nav look like a button */
+.menu-border {
+  border: 1px solid #c0c0c0;
+  border-radius: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* set design for active navbar item */
+.navbar-active{
+	background-color: #ebebeb;
+	border-bottom: 3px solid green;
+}
+/*
+.nav-hover:hover {
+  border-bottom: 1px solid green;
+} */
+
+/* puts border on top and below the navbar items on collapse */ 
+.line-border:before{
+	content: ""; /* This is necessary for the pseudo element to work. */ /* an empty text to create the border. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 100%; /* Change this to whatever width you want. */
+    padding-top: 0px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid #c0c0c0; /* This creates the border. Replace black with whatever color you want. */
+}
+.line-border:after{
+	content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 100%; /* Change this to whatever width you want. */
+    margin-bottom: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid #c0c0c0; /* This creates the border. Replace black with whatever color you want. */
+}
+
+
+/* ------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------- */
+/* Profile page vertical menu */
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #383838; /*#2f4050;*/ /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 150px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  padding-top: 60px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 992px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 992px) {
+  .sidenav {padding-top: 130px;}
+  .sidenav a {font-size: 17px;}
+  .title-design {font-size: 20px;}
+  
+}
+
+
+/* Change the profile navbar fixed to white background colour on scroll */
+.fixed-top-scrolled {
+	background-color: #fff !important;
+	transition: background-color 200ms linear;
+	margin-top: -10px;
+	/*color: #00d936;*/
+}
+
+
+.profile-active{
+	background-color: grey;
+}
+.profile-color{
+	background-color: brown;
+}
+
+/* ------------------------------------------------------- */
+
+
+/* ------------------------------------------------------- */
+/* CSS form */
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@media (min-width: 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+}
+
+
+.form-signin {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group > input,
+.form-label-group > label {
+  height: 3.125rem;
+  padding: .75rem;
+}
+
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0; /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  pointer-events: none;
+  cursor: text; /* Match the input under the label */
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: 1.25rem;
+  padding-bottom: .25rem;
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Fallback for Edge */
+
+@supports (-ms-ime-align: auto) {
+  .form-label-group > label {
+    display: none;
+  }
+  .form-label-group input::-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+/* Fallback for IE */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .form-label-group > label {
+    display: none;
+  }
+  .form-label-group input:-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+/* ------------------------------------------------------- */
+
+
+
+
+/* ------------------------------------------------------- */
+/* Submit button annimation */
+
+
+#submit-ani {
+	display: none;
+}
+
+
+/* ------------------------------------------------------- */
+
+
+
+
+/* ------------------------------------------------------- */
+/* Footer design */
+
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#007bb6
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+/* ------------------------------------------------------- */

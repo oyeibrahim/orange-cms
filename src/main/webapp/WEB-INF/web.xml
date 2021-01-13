@@ -1,0 +1,334 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+	<servlet>
+		<servlet-name>test.jsp</servlet-name>
+		<jsp-file>/test.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>login.jsp</servlet-name>
+		<jsp-file>/frontend/login.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>register.jsp</servlet-name>
+		<jsp-file>/frontend/register.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>password-reset-request.jsp</servlet-name>
+		<jsp-file>/frontend/password-reset-request.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>profile.jsp</servlet-name>
+		<jsp-file>/frontend/profile.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>referral.jsp</servlet-name>
+		<jsp-file>/frontend/referral.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>identity.jsp</servlet-name>
+		<jsp-file>/frontend/identity.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>settings.jsp</servlet-name>
+		<jsp-file>/frontend/settings.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>user-comments.jsp</servlet-name>
+		<jsp-file>/frontend/user-comments.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>user-posts.jsp</servlet-name>
+		<jsp-file>/frontend/user-posts.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>create-post.jsp</servlet-name>
+		<jsp-file>/frontend/create-post.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>edit-post.jsp</servlet-name>
+		<jsp-file>/frontend/edit-post.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>posts.jsp</servlet-name>
+		<jsp-file>/frontend/posts.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>post.jsp</servlet-name>
+		<jsp-file>/frontend/post.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>contact-us.jsp</servlet-name>
+		<jsp-file>/frontend/contact-us.jsp</jsp-file>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>admins.jsp</servlet-name>
+		<jsp-file>/backend/admins.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>users.jsp</servlet-name>
+		<jsp-file>/backend/users.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>comments.jsp</servlet-name>
+		<jsp-file>/backend/comments.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>categories.jsp</servlet-name>
+		<jsp-file>/backend/categories.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>tags.jsp</servlet-name>
+		<jsp-file>/backend/tags.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>types.jsp</servlet-name>
+		<jsp-file>/backend/types.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>category-edit.jsp</servlet-name>
+		<jsp-file>/backend/category-edit.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>tag-edit.jsp</servlet-name>
+		<jsp-file>/backend/tag-edit.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>type-edit.jsp</servlet-name>
+		<jsp-file>/backend/type-edit.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>backend-posts.jsp</servlet-name>
+		<jsp-file>/backend/posts.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>backend-post-edit.jsp</servlet-name>
+		<jsp-file>/backend/post-edit.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>contact-message.jsp</servlet-name>
+		<jsp-file>/backend/contact-message.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>contact-messages.jsp</servlet-name>
+		<jsp-file>/backend/contact-messages.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>db-settings.jsp</servlet-name>
+		<jsp-file>/backend/db-settings.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>db-setting.jsp</servlet-name>
+		<jsp-file>/backend/db-setting.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>db-setting-edit.jsp</servlet-name>
+		<jsp-file>/backend/db-setting-edit.jsp</jsp-file>
+	</servlet>
+
+	<servlet>
+		<servlet-name>db-setting-create.jsp</servlet-name>
+		<jsp-file>/backend/db-setting-create.jsp</jsp-file>
+	</servlet>
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>test.jsp</servlet-name>
+		<url-pattern>/home/ride/test/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>login.jsp</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>register.jsp</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>password-reset-request.jsp</servlet-name>
+		<url-pattern>/password-reset-request</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>profile.jsp</servlet-name>
+		<url-pattern>/profile/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>referral.jsp</servlet-name>
+		<url-pattern>/referral</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>identity.jsp</servlet-name>
+		<url-pattern>/identity</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>settings.jsp</servlet-name>
+		<url-pattern>/settings</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>user-comments.jsp</servlet-name>
+		<url-pattern>/my-comments/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>user-posts.jsp</servlet-name>
+		<url-pattern>/my-posts/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>create-post.jsp</servlet-name>
+		<url-pattern>/create-post</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>edit-post.jsp</servlet-name>
+		<url-pattern>/edit-post</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>posts.jsp</servlet-name>
+		<url-pattern>/posts/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>post.jsp</servlet-name>
+		<url-pattern>/post/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>contact-us.jsp</servlet-name>
+		<url-pattern>/contact-us</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>admins.jsp</servlet-name>
+		<url-pattern>/backend/admins/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>users.jsp</servlet-name>
+		<url-pattern>/backend/users/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>comments.jsp</servlet-name>
+		<url-pattern>/backend/comments/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>categories.jsp</servlet-name>
+		<url-pattern>/backend/categories/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>tags.jsp</servlet-name>
+		<url-pattern>/backend/tags/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>types.jsp</servlet-name>
+		<url-pattern>/backend/types/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>category-edit.jsp</servlet-name>
+		<url-pattern>/backend/category-edit</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>tag-edit.jsp</servlet-name>
+		<url-pattern>/backend/tag-edit</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>type-edit.jsp</servlet-name>
+		<url-pattern>/backend/type-edit</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>backend-posts.jsp</servlet-name>
+		<url-pattern>/backend/posts/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>backend-post-edit.jsp</servlet-name>
+		<url-pattern>/backend/post-edit</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>contact-message.jsp</servlet-name>
+		<url-pattern>/backend/contact-message</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>contact-messages.jsp</servlet-name>
+		<url-pattern>/backend/contact-messages/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>db-settings.jsp</servlet-name>
+		<url-pattern>/backend/db-settings/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>db-setting.jsp</servlet-name>
+		<url-pattern>/backend/db-setting</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>db-setting-edit.jsp</servlet-name>
+		<url-pattern>/backend/setting-edit</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>db-setting-create.jsp</servlet-name>
+		<url-pattern>/backend/setting-create</url-pattern>
+	</servlet-mapping>
+
+</web-app>
